@@ -1,5 +1,5 @@
 # Tables comparing nutritional status in first or second trimester between initiated and not-initated GiP groups
-## First trimester nutritional status
+## First trimester table
 
 This code filters the data for participants in the subset used for the logistic regression change analysis (Change_IDs) and creates a summary table comparing nutritional status parameters in the first trimester between participants who did anddid not intiate geophagia in the third trimester. The table includes statistics, p-values, and confidence intervals:
 
@@ -80,7 +80,7 @@ Tbl_T1Analysis <- ChangeAnalysis  %>%
     as_gt()
 
 ```
-## Second trimester nutritional status 
+## Second trimester table 
 
 This code filters the data for participants in the subset used for the logistic regression change analysis (Change_IDs) and creates a summary table comparing mid-upper arm circumference (MUAC) and haemoglobin in the secondtrimester between participants who did and did not intiate geophagia in the third trimester. The table includes statistics, p-values, and confidence intervals:
 
