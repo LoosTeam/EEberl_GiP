@@ -67,7 +67,7 @@ summary_gip_ID <- overall_giP_ID_df %>%
 summary(overall_giP_ID_df$AvgDailySoilAmount)
 ```
 
-## Plot (UpSet) of GiP occurence and initiation
+## UpSet plot of GiP occurence and initiation
 
 This code creates a subset of the data to only include participants that reported eating soil at anytime during pregnancy and completed a dietary recall in all three trimesters:
 
