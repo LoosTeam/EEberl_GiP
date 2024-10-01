@@ -19,6 +19,7 @@ GiP_Upset_Trimester <- ponadb %>%
     as.data.frame()
 ```
 
+## UpSet plot
 This code creates the UpSet plot to visualize the overlap between participants who ate soil in the first, second, and third trimesters.
 
 ```{r}
