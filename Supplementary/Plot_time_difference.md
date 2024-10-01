@@ -90,7 +90,7 @@ T3Analysis_long <- T3Analysis %>%
     Trimester = "Third")
 ```
 
-## Plot
+## Jitter plot
 This code creates the combined dataset to plot and colours to use in the plot:
 
 ```{r}
