@@ -87,6 +87,7 @@ Univariate <- T3_UnivAnalysis  %>%
     )
 ```
 
+## Univariate analysis table
 This code creates a summary table from the 'Univariate' dataset, grouping by the `soileating` or `soileating_ever` variable
 
 ```{r}
