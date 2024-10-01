@@ -2,11 +2,9 @@
 
 In the dataset from the FOETALforNCD pregnancy study (PONA), each row is an antenatal care (ANC) visit with multiple ANC visits for each participant. Each visit is categorised as either a study enrollment visit, scheduled ANC visit, unscheduled ANC visit, or delivery visit. Each participant is assigned with a unique ID number and data collected at each visit are stored as separate variables.
 
-# Data preparation
+# Data subsets
 
-## Data subsets
-
-### IDs of dietary recall participants
+## IDs of dietary recall participants
 
 This code creates a list of IDs of the participants that completed at least one dietary recall during pregnancy:
 
@@ -17,7 +15,7 @@ dietrecall_IDs <- ponadb %>%    # Start with the 'ponadb' data frame
     pull(ID)                    # Extract 'ID' as a vector
 ```
 
-### Subset for baseline and demographic analysis
+## Subset for baseline and demographic analysis
 
 The following code creates a subset of the data for analysis comparing those with and without geophagia at any time-point during pregnancy. This subset includes participants that completed at least one dietary recall during pregnancy:
 
@@ -27,11 +25,11 @@ tbl1_subset <- ponadb %>%
     distinct(ID, .keep_all = TRUE)
 ```
 
-### Subsets for cross-sectional analyses
+## Subsets for cross-sectional analyses
 
 The following code chunks create trimester-specific subsets of the data for the cross-sectional analyses investigating the association between geophagia and nutritional status parameters in each trimester.
 
-#### First trimester
+### First trimester
 
 ```{r}
 # Filter for ANC visits that occured in the first trimester and where the participant completed a dietary recall.
@@ -46,7 +44,7 @@ T1Analysis <- ponadb %>%
 
 ```
 
-#### Second trimester
+### Second trimester
 
 ```{r}
 # Filter for ANC visits that occured in the second trimester and where the participant completed a dietary recall.
@@ -59,7 +57,7 @@ T2Analysis <- ponadb %>%
     distinct(ID, .keep_all = TRUE)
 ```
 
-#### Third trimester
+### Third trimester
 
 ```{r}
 # Filter for ANC visits that occured in the third trimester and where the participant completed a dietary recall. 
@@ -72,7 +70,7 @@ T3Analysis <- ponadb %>%
     distinct(ID, .keep_all = TRUE)
 ```
 
-### Subset of participants who ate soil at any time-point (GiP)
+## Subset of participants who ate soil at any time-point (GiP)
 
 This code creates a subset of the data including only the first visit where geophagia was reported in a specific trimester among participants that reported eating soil during pregnancy:
 
@@ -87,7 +85,7 @@ gip_df <- ponadb %>%
 
 ```
 
-### Subset for cross-sectional plots
+## Subset for cross-sectional plots
 
 This code creates a subset of the data for the cross-sectional plots:
 
@@ -107,7 +105,7 @@ Xanalysis <- ponadb %>%
              .keep_all = TRUE)
 ```
 
-### IDs of participants for logistic regression analyses
+## IDs of participants for logistic regression analyses
 
 The following code creates a list of participant IDs to include in the logistic regression analyses investigating the association between changes in nutritional status parameters and the initiation of geophagia in third trimester:
 
@@ -129,7 +127,7 @@ Change_IDs <- ponadb %>%
     pull(ID)
 ```
 
-### Subset for multivariable logistic regression analyses and creation of change variables
+## Subset for multivariable logistic regression analyses and creation of change variables
 
 This code creates variables for the differences in nutritional status parameters from first to second trimester, first to third trimester, and second to third trimester:
 
