@@ -1,4 +1,4 @@
-## Pre-pregnancy nutritional status parameter analysis
+# Pre-pregnancy nutritional status parameter analysis
 
 This code creates a subset of the data that only includes participants who completed a dietary recall during pregnancy and also had measurements of MUAC, BMI, vitamin B12, ferritin, folate, or haemoglobin before pregnancy:
 
@@ -23,7 +23,7 @@ subset_prepreg_participants <- ponadb %>%
     distinct(ID, .keep_all = TRUE)
 ```
 
-### Table of nutritional status parameters at pre-pregnancy among participants with or without GiP
+## Table of nutritional status parameters at pre-pregnancy among participants with or without GiP
 
 This code creates a summary table comparing pre-pregnancy nutritional status parameters between participants who ate or never ate soil during pregnancy, including means, confidence intervals and p-values:
 
