@@ -1,6 +1,6 @@
-## Demographics and baseline characteristics
+# Demographics and baseline characteristics
 
-### Table of demographic and baseline characteristics among women with and without GiP
+## Table of demographic and baseline characteristics among women with and without GiP
 
 This code selects variables to include in table 1:
 
@@ -91,7 +91,7 @@ tbl1_analysis %>%
     as_gt()                                        
 ```
 
-### Confidence intervals for continuous variables
+## Confidence intervals for continuous variables
 
 To resolve the issue with the code for table 1 not showing confidence intervals for continuous variables, this code recreates the confidence intervals:
 
