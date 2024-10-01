@@ -1,6 +1,7 @@
 # Univariate analyses
+Univariate analyses with either geophagia at any timepoint during pregnancy or geophagia in the third trimester as the dependent variable were used to identify which co-variates to adjust for in the logistic regression model investigating the association between changes in nutritional status parameters and initiation og GiP in third trimester. 
 
-This code creates a subset of the data for participants who completed a dietary recall (Done_24h == 1) in the third trimester (visit_trimester == 3) and a subset of the data for participants who completed at least one dietary recall during pregnancy, with a preference for entries where geophagia was reported. These subsets will then be analysed in order to identify co-variates to include in the logistic regression analysis.
+The following code creates a subset of the data for participants who completed a dietary recall (Done_24h == 1) in the third trimester (visit_trimester == 3) and a subset for participants who completed at least one dietary recall during pregnancy, with a preference for entries where geophagia was reported:
 
 ```{r}
 T3_UnivAnalysis <- ponadb %>%
