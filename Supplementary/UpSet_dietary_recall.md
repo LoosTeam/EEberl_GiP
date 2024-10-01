@@ -1,4 +1,4 @@
-# UpSet plot of diet recall completion in cohort
+# UpSet plot of dietary recall completion in cohort
 
 This code prepares the data to plot, such that only participants that completed at least one dietary recall during pregnancy are included and that there is only one entry per participant.
 
