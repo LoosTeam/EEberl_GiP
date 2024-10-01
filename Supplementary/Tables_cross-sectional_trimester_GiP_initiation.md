@@ -1,4 +1,4 @@
-Tables comparing nutritional status in first or second trimester between initiated and not-initated GiP groups
+Tables comparing nutritional status in the first and second trimester between women who initiated and didn not initiate geophagia in the third trimester
 
 ## First trimester table
 
