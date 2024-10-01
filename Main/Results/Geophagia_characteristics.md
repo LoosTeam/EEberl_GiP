@@ -1,6 +1,6 @@
-## Geophagia characteristics and temporality
+# Geophagia characteristics and temporality
 
-### Table of geophagia characteristics
+## Table of geophagia characteristics
 
 This code creates a data frame to hold the characteristics summary grouped by trimester from the subset of participants with geophagia at any time during pregnancy:
 
@@ -34,7 +34,7 @@ subset_df <- gip_df %>%
 t.test(subset_df$new_soil_dailyintake)
 ```
 
-### Overall GiP characteristics
+## Overall GiP characteristics
 
 This code creates a data frame to hold the averages for geophagia characteristics for each individual across all trimesters:
 
@@ -67,7 +67,7 @@ summary_gip_ID <- overall_giP_ID_df %>%
 summary(overall_giP_ID_df$AvgDailySoilAmount)
 ```
 
-### Plot (UpSet) of GiP occurence and initiation
+## Plot (UpSet) of GiP occurence and initiation
 
 This code creates a subset of the data to only include participants that reported eating soil at anytime during pregnancy and completed a dietary recall in all three trimesters:
 
