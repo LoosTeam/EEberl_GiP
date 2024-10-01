@@ -21,6 +21,7 @@ GA_24hr_Analysis_Sample <- ponadb %>%
 
 ```
 
+## Boxplot
 This code generates a summary plot visualising the distribution of gestational weeks where dietary recalls were completed across different trimesters in the `GA_24hr_Analysis_Sample` dataset:
 
 ```{r}
