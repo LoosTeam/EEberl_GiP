@@ -1,6 +1,6 @@
-## Analysis of change of nutritional status parameters and initiation of geophagia
+# Analysis of change of nutritional status parameters and initiation of geophagia
 
-### Backward selection
+## Backward selection
 
 This code prepares the dataset for backward selection:
 
@@ -75,7 +75,7 @@ formula(backward_selection)
 summary(backward_selection)
 ```
 
-### Multivariable logistic regression analysis
+## Multivariable logistic regression analysis
 
 This code fits a crude and adjusted logistic regression model predicting geophagia in the third trimester (`soileating_t3`) based on changes in nutritional status parameters across pregnancy. The change in MUAC from first trimester is included as an example.
 
