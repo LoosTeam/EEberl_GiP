@@ -1,4 +1,5 @@
-# Tables comparing nutritional status in first or second trimester between initiated and not-initated GiP groups
+Tables comparing nutritional status in first or second trimester between initiated and not-initated GiP groups
+
 ## First trimester table
 
 This code filters the data for participants in the subset used for the logistic regression change analysis (Change_IDs) and creates a summary table comparing nutritional status parameters in the first trimester between participants who did anddid not intiate geophagia in the third trimester. The table includes statistics, p-values, and confidence intervals:
